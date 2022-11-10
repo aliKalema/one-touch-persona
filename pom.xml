@@ -23,17 +23,12 @@
 		</dependency>
 
 		<dependency>
-			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter-test</artifactId>
-			<scope>test</scope>
-		</dependency>
-
-		<dependency>
 			<groupId>dpfpenrollment</groupId>
 			<artifactId>dpfpenrollment</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpfpenrollment.jar</systemPath>
+<!--			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpfpenrollment.jar</systemPath>-->
+			<systemPath>${project.basedir}/libs/dpfpenrollment.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -41,7 +36,8 @@
 			<artifactId>dpfpverification</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpfpverification.jar</systemPath>
+<!--			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpfpverification.jar</systemPath>-->
+			<systemPath>${project.basedir}/libs/dpfpverification.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -49,7 +45,8 @@
 			<artifactId>dpotapi</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpotapi.jar</systemPath>
+<!--			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpotapi.jar</systemPath>-->
+			<systemPath>${project.basedir}/libs/dpotapi.jar</systemPath>
 		</dependency>
 
 		<dependency>
@@ -57,8 +54,21 @@
 			<artifactId>dpotjni</artifactId>
 			<version>1.0</version>
 			<scope>system</scope>
-			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpotjni.jar</systemPath>
+<!--			<systemPath>C:\Program Files\DigitalPersona\Bin\Java\dpotjni.jar</systemPath>-->
+			<systemPath>${project.basedir}/libs/dpotjni.jar</systemPath>
 		</dependency>
+
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-test</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.projectlombok</groupId>
+			<artifactId>lombok</artifactId>
+		</dependency>
+
 	</dependencies>
 
 	<build>
